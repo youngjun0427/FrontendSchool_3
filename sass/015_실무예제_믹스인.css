@@ -40,9 +40,9 @@ li:nth-child(10) .thumb {
 
 .profile {
   display: block;
-  border-radius: 50%;
-  -ms-border-radius: 50%;
-  -webkit-border-radius: 50%;
+  border-radius: 30%;
+  -ms-border-radius: 30%;
+  -webkit-border-radius: 30%;
   width: 100px;
   height: 100px;
   background-color: red;

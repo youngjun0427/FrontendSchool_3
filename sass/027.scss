@@ -1,43 +1,15 @@
-// @function sigma($number){
-//     $result: 0;
-
-//     @for $i from 1 to $number {
-//         $result: $result + $i; // 숫자로 처리
-//     }
-
-//     @return $result;
-// }
-
-// .one {
-//     width: sigma(11)px;
-// }
-
-// @function sigma($number){
-//     $result: 0;
-
-//     @for $i from 1 to $number {
-//         $result: #{$result + $i}; // 문자열로 처리(#이 들어간 공간을 통째로 문자열로 처리)
-//     }
-
-//     @return $result;
-// }
-
-// .one {
-//     width: sigma(11) + px;
-//     // width: 12345678910px;
-// }
-
-@function sigma($number) {
-  $result: 0;
-
-  @for $i from 1 to $number {
-    $result: #{$result} + $i;
-  }
-
-  @return $result;
+.one {
+    font-size: max(10, 20, 30, 12) + px;
 }
 
-.one {
-  width: sigma(11) + px;
-  // width: 012345678910px;
+// $result : #{$i + $result}
+// $result: $result + $i; 
+
+@for $hojun from 1 through 10 {
+    .content-#{$hojun} {
+        font-size: #{$hojun * 10}px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
 }

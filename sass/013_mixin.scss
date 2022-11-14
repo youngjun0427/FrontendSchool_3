@@ -3,16 +3,18 @@
 
 // 파선아실
 
-@mixin center-xy {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@mixin center-xy{
+	display: flex;
+	justify-content : center;
+	align-items : center;
 }
 
-.card {
-  @include center-xy; // 정의한 center-xy mixin을 사용하여 코드 한줄이면 끝!
+.card{
+	@include center-xy; // 정의한 center-xy mixin을 사용하여 코드 한줄이면 끝!
+    background: gray;
 }
 
-.aside {
-  @include center-xy;
+.aside{
+	@include center-xy;
+    background: white;
 }
