@@ -16,6 +16,7 @@ function Counter (){
 
   const handleThreeUp = (e) => {
     setThree(three + 1)
+    console.log(three)
   }
 
   const handleTestUp = (e) => {
